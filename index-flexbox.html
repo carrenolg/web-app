@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obj 2 — Flexbox: Layout de tarjetas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Objetivo 2: Flexbox + wrap</h1>
+  <p class="subtitle">Estas tarjetas usan <code>display: flex; flex-wrap: wrap; gap: 16px;</code> — sin media queries.</p>
+
+  <div class="card-grid">
+    <article class="card">
+      <div class="card-img" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">🎧</div>
+      <div class="card-body">
+        <h3>Auriculares Pro</h3>
+        <p class="price">$49.990</p>
+        <p class="desc">Cancelación de ruido activa, 30h de batería.</p>
+        <button>Comprar</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-img" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);">⌨️</div>
+      <div class="card-body">
+        <h3>Teclado Mecánico</h3>
+        <p class="price">$89.990</p>
+        <p class="desc">Switches Cherry MX, retroiluminación RGB.</p>
+        <button>Comprar</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-img" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">🖱️</div>
+      <div class="card-body">
+        <h3>Mouse Ergonómico</h3>
+        <p class="price">$34.990</p>
+        <p class="desc">Diseño vertical, 6 botones programables.</p>
+        <button>Comprar</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-img" style="background: linear-gradient(135deg, #10b981, #059669);">📱</div>
+      <div class="card-body">
+        <h3>Cargador Inalámbrico</h3>
+        <p class="price">$19.990</p>
+        <p class="desc">Carga rápida 15W, compatible Qi.</p>
+        <button>Comprar</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-img" style="background: linear-gradient(135deg, #ec4899, #a855f7);">🎮</div>
+      <div class="card-body">
+        <h3>Control Bluetooth</h3>
+        <p class="price">$42.990</p>
+        <p class="desc">Compatible con PC, Switch y móvil.</p>
+        <button>Comprar</button>
+      </div>
+    </article>
+  </div>
+
+  <div class="rule">
+    <strong>Regla #2:</strong> <code>flex-wrap: wrap</code> hace que las tarjetas salten solas a la siguiente fila cuando no caben. Sin una sola media query.
+  </div>
+</body>
+</html>
